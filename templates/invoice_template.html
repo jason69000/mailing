@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fintech Invoice {{InvoiceNumber}}</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f8f9fb; color: #111827; }
+    .page { width: 210mm; min-height: 297mm; margin: auto; padding: 24mm; background: #ffffff; position: relative; box-shadow: 0 0 20px rgba(0, 0, 0, 0.06); }
+    .watermark { position: absolute; inset: 0; z-index: 0; opacity: 0.08; background: radial-gradient(circle, rgba(13, 42, 148, 0.08), transparent 35%); }
+    .header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid #d7dce0; }
+    .brand { max-width: 60%; }
+    .brand h1 { margin: 0; font-size: 2rem; color: #111827; }
+    .meta { text-align: right; }
+    .meta p { margin: 4px 0; }
+    .section { position: relative; z-index: 1; }
+    .details, .invoice-summary { margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .box { padding: 18px; border-radius: 18px; border: 1px solid #d7dce0; background: #f8fbff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); }
+    .box strong { display: block; margin-bottom: 8px; }
+    .badge { display: inline-block; padding: 6px 12px; border-radius: 999px; border: 1px solid #d7dce0; background: #e2e8f0; color: #111827; font-weight: 700; }
+    .footer { margin-top: 32px; padding-top: 24px; border-top: 1px solid #d7dce0; font-size: 0.9rem; color: #4b5563; }
+    .notice { padding: 14px 18px; border-radius: 14px; background: #fef3c7; border: 1px solid #fde68a; color: #92400e; }
+    .link { color: #2563eb; text-decoration: none; }
+    .small { font-size: 0.9rem; }
+    .status { font-size: 1.1rem; }
+    .seal { margin-top: 12px; }
+    .security { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
+    .security-icon { width: 76px; min-height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #111827; background: #f4f5f7; }
+    .security-badge { width: 100%; height: 100%; padding: 12px; border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; background: #e2e8f0; color: #111827; }
+    .section-spacing { margin-top: 26px; }
+    .qr-box { margin-top: 18px; }
+    @media print { body { background: #fff; } .page { box-shadow: none; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="watermark"></div>
+    <div class="section header">
+      <div class="brand">
+        <h1>Invoice {{InvoiceNumber}}</h1>
+        <p class="small">Prepared for <strong>{{Name}}</strong></p>
+        <p class="small">Email: {{Email}}</p>
+        <p class="small">Account: {{Bank}} / {{Fintech}}</p>
+      </div>
+      <div class="meta">
+        <p class="badge">{{PaymentMethodName}}</p>
+        <p class="small">{{PaymentMethodMessage}}</p>
+        <p class="small"><em>{{PaymentMethodCompliance}}</em></p>
+      </div>
+    </div>
+
+    <div class="section invoice-summary">
+      <div class="box">
+        <strong>Product</strong>
+        <p>{{Product}}</p>
+      </div>
+      <div class="box">
+        <strong>Total Due</strong>
+        <p class="status">{{Total}}</p>
+      </div>
+    </div>
+
+    <div class="section details">
+      <div class="box">
+        <strong>Verification</strong>
+        <p class="small">Serial code: <span>{{SerialCode}}</span></p>
+        <p class="small">Blockchain hash: <span>{{BlockchainHashValue}}</span></p>
+        <p class="small">Audit summary: {{AuditTrailSummary}}</p>
+        <p class="small">Chain viewer: <a class="link" href="{{ChainViewerLink}}">{{ChainViewerLabel}}</a></p>
+      </div>
+      <div class="box">
+        <strong>Security</strong>
+        <div class="security">
+          <div class="security-badge">{{SecuritySealLabel}}</div>
+          <div>
+            <p>{{SecuritySealLabel}}</p>
+            <p class="small">{{RevocationStatus}}</p>
+          </div>
+        </div>
+        <p class="small">{{RevocationNotice}}</p>
+        <p class="small">{{RevocationLabel}}</p>
+      </div>
+    </div>
+
+    <div class="section section-spacing">
+      <div class="box">
+        <strong>Anti-Tamper</strong>
+        <p>{{TamperPatternLabel}}</p>
+      </div>
+      <div class="box qr-box">
+        <strong>QR Verification</strong>
+        <p class="small">Verify this document at:</p>
+        <p><a class="link" href="{{QrVerificationUrl}}">{{QrVerificationUrl}}</a></p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="small">{{AuditTrailDetails}}</p>
+      <p class="small">For questions, contact support@yourfintech.com</p>
+    </div>
+  </div>
+</body>
+</html>

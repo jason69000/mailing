@@ -1,0 +1,32 @@
+{
+  "invoices": [
+    {
+      "invoice": "INV-2026-1001",
+      "render_ok": true,
+      "response_ok": true,
+      "header_ok": true,
+      "page_not_blank": true,
+      "console_errors": [],
+      "console_warnings": [],
+      "console_logs": [],
+      "page_errors": [],
+      "failed_requests": [],
+      "screenshot": null,
+      "error": null
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "render_ok": true,
+      "response_ok": true,
+      "header_ok": true,
+      "page_not_blank": true,
+      "console_errors": [],
+      "console_warnings": [],
+      "console_logs": [],
+      "page_errors": [],
+      "failed_requests": [],
+      "screenshot": null,
+      "error": null
+    }
+  ]
+}

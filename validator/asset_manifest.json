@@ -1,0 +1,7 @@
+{
+  "algorithm": "sha256",
+  "assets": {
+    "web/index.html": "fc054f9647a9af4ee22fe5e7026fc5ef5c7acb0e9ec2347366e5b08d03ca6729",
+    "templates/invoice_template.html": "8838bf6c8d11c2e4c036e73bd4dad395ec17e8bc5eb40c736256a347aa4e9485"
+  }
+}

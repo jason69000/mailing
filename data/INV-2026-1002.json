@@ -1,0 +1,17 @@
+{
+  "invoice_number": "INV-2026-1002",
+  "customer_name": "John Smith",
+  "customer_email": "john.smith@example.com",
+  "issue_date": "2026-07-21",
+  "due_date": "2026-08-20",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Enterprise Liquidity",
+      "quantity": 1,
+      "unit_price": 3450.5,
+      "amount": 3450.5
+    }
+  ],
+  "total_amount": 3450.5
+}

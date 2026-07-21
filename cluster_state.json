@@ -1,0 +1,390 @@
+{
+  "workers": [
+    {
+      "name": "render-worker-01",
+      "role": "render",
+      "capacity": "high",
+      "healthy": true,
+      "latency": 120,
+      "last_error": null
+    },
+    {
+      "name": "signature-worker-01",
+      "role": "signature",
+      "capacity": "crypto",
+      "healthy": true,
+      "latency": 90,
+      "last_error": null
+    },
+    {
+      "name": "browser-worker-01",
+      "role": "browser",
+      "capacity": "headless",
+      "healthy": true,
+      "latency": 140,
+      "last_error": null
+    },
+    {
+      "name": "pdf-worker-01",
+      "role": "pdf",
+      "capacity": "pdf",
+      "healthy": true,
+      "latency": 110,
+      "last_error": null
+    },
+    {
+      "name": "email-worker-01",
+      "role": "email",
+      "capacity": "smtp",
+      "healthy": true,
+      "latency": 80,
+      "last_error": null
+    }
+  ],
+  "assignments": [
+    {
+      "invoice": "INV-1001",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T14:05:53.8755643-06:00"
+    },
+    {
+      "invoice": "INV-1002",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T14:05:53.8906116-06:00"
+    },
+    {
+      "invoice": "INV-1003",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T14:05:53.89288-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T14:06:57.6118203-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T14:06:57.6529597-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T14:06:57.6570616-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "pdf",
+      "worker": "pdf-worker-01",
+      "role": "pdf",
+      "assigned_at": "2026-07-21T14:06:57.6607567-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "email",
+      "worker": "email-worker-01",
+      "role": "email",
+      "assigned_at": "2026-07-21T14:06:57.663667-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T14:06:57.66862-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T14:06:57.6714338-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T14:06:57.6750611-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "pdf",
+      "worker": "pdf-worker-01",
+      "role": "pdf",
+      "assigned_at": "2026-07-21T14:06:57.6784679-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "email",
+      "worker": "email-worker-01",
+      "role": "email",
+      "assigned_at": "2026-07-21T14:06:57.6814931-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T14:08:26.0971729-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T14:08:26.1099254-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T14:08:26.113539-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "pdf",
+      "worker": "pdf-worker-01",
+      "role": "pdf",
+      "assigned_at": "2026-07-21T14:08:26.1159722-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "email",
+      "worker": "email-worker-01",
+      "role": "email",
+      "assigned_at": "2026-07-21T14:08:26.118254-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T14:08:26.122743-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T14:08:26.1257136-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T14:08:26.1298605-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "pdf",
+      "worker": "pdf-worker-01",
+      "role": "pdf",
+      "assigned_at": "2026-07-21T14:08:26.1323426-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "email",
+      "worker": "email-worker-01",
+      "role": "email",
+      "assigned_at": "2026-07-21T14:08:26.134791-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T14:22:09.8504072-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T14:22:09.8627976-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T14:22:09.8677676-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "pdf",
+      "worker": "pdf-worker-01",
+      "role": "pdf",
+      "assigned_at": "2026-07-21T14:22:09.8707181-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "email",
+      "worker": "email-worker-01",
+      "role": "email",
+      "assigned_at": "2026-07-21T14:22:09.8743641-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T14:22:09.8788573-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T14:22:09.8824682-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T14:22:09.8860604-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "pdf",
+      "worker": "pdf-worker-01",
+      "role": "pdf",
+      "assigned_at": "2026-07-21T14:22:09.8888764-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "email",
+      "worker": "email-worker-01",
+      "role": "email",
+      "assigned_at": "2026-07-21T14:22:09.8917787-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T14:57:11.7352616-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T14:57:11.7501423-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T14:57:11.7546413-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "pdf",
+      "worker": "pdf-worker-01",
+      "role": "pdf",
+      "assigned_at": "2026-07-21T14:57:11.7583273-06:00"
+    },
+    {
+      "invoice": "INV-2026-1001",
+      "job_type": "email",
+      "worker": "email-worker-01",
+      "role": "email",
+      "assigned_at": "2026-07-21T14:57:11.7611283-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T14:57:11.7658016-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T14:57:11.7693881-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T14:57:11.7744257-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "pdf",
+      "worker": "pdf-worker-01",
+      "role": "pdf",
+      "assigned_at": "2026-07-21T14:57:11.7774332-06:00"
+    },
+    {
+      "invoice": "INV-2026-1002",
+      "job_type": "email",
+      "worker": "email-worker-01",
+      "role": "email",
+      "assigned_at": "2026-07-21T14:57:11.7802483-06:00"
+    },
+    {
+      "invoice": "INV-1001",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T15:27:09.3803444-06:00"
+    },
+    {
+      "invoice": "INV-1002",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T15:27:09.4007435-06:00"
+    },
+    {
+      "invoice": "INV-1003",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T15:27:09.4048462-06:00"
+    },
+    {
+      "invoice": "INV-1001",
+      "job_type": "render",
+      "worker": "render-worker-01",
+      "role": "render",
+      "assigned_at": "2026-07-21T15:30:52.1044888-06:00"
+    },
+    {
+      "invoice": "INV-1002",
+      "job_type": "signature",
+      "worker": "signature-worker-01",
+      "role": "signature",
+      "assigned_at": "2026-07-21T15:30:52.1265831-06:00"
+    },
+    {
+      "invoice": "INV-1003",
+      "job_type": "browser",
+      "worker": "browser-worker-01",
+      "role": "browser",
+      "assigned_at": "2026-07-21T15:30:52.1336862-06:00"
+    }
+  ],
+  "anomalies": []
+}

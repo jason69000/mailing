@@ -1,0 +1,18 @@
+[
+  {
+    "invoice": "INV-2026-1001",
+    "render_worker": "render-worker-01",
+    "signature_worker": "signature-worker-01",
+    "browser_worker": "browser-worker-01",
+    "pdf_worker": "pdf-worker-01",
+    "email_worker": "email-worker-01"
+  },
+  {
+    "invoice": "INV-2026-1002",
+    "render_worker": "render-worker-01",
+    "signature_worker": "signature-worker-01",
+    "browser_worker": "browser-worker-01",
+    "pdf_worker": "pdf-worker-01",
+    "email_worker": "email-worker-01"
+  }
+]

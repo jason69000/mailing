@@ -1,0 +1,19 @@
+# PDF signature PKI policy for this invoice validator.
+# The validator applies the equivalent settings directly through
+# pyhanko_certvalidator.ValidationContext because the installed PyHanko
+# release does not expose pyhanko.config.read_config/from_pki_config.
+validation:
+  trust:
+    certs:
+      # Override these with the CA certificates used by your deployment.
+      # The running validator reads PDF_SIGNATURE_TRUST_ROOTS, separated by
+      # the platform path separator (; on Windows).
+      - path: C:\FintechInvoiceEngine\certs\root_ca.pem
+      - path: C:\FintechInvoiceEngine\certs\intermediate_ca.pem
+  revinfo:
+    ocsp:
+      use_ocsp: true
+    crl:
+      use_crl: true
+    mode: hard-fail
+    allow_fetching: true

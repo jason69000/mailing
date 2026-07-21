@@ -1,0 +1,3 @@
+Name,Email,Product,Total,InvoiceNumber,Bank,Fintech,PaymentMethod,Revoked,RevocationReason,RevokedBy,ReplacementInvoice,ParentInvoice,CreatedBy
+Jane Doe,jane.doe@example.com,Premium Settlement,1250.00,INV-2026-1001,First National,PayPal,ACH,false,,,,
+John Smith,john.smith@example.com,Enterprise Liquidity,3450.50,INV-2026-1002,CoreBank,Stripe,Card,true,Duplicate invoice requested,Accounts Team,INV-2026-1003,INV-2025-0999,Billing System

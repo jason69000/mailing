@@ -1,0 +1,17 @@
+{
+  "invoice_number": "INV-2026-1001",
+  "customer_name": "Jane Doe",
+  "customer_email": "jane.doe@example.com",
+  "issue_date": "2026-07-21",
+  "due_date": "2026-08-20",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Premium Settlement",
+      "quantity": 1,
+      "unit_price": 1250.0,
+      "amount": 1250.0
+    }
+  ],
+  "total_amount": 1250.0
+}

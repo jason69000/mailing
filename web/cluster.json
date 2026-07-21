@@ -1,0 +1,57 @@
+{
+  "workers": {
+    "worker_browser_1": {
+      "status": "Healthy",
+      "fail_count": 0,
+      "role": "browser",
+      "capacity": 3,
+      "load": 0,
+      "last_assigned_at": "2026-07-21T15:44:20.1912388-06:00",
+      "health_score": 74.0,
+      "metrics": {
+        "latency_ms": [
+          300,
+          320,
+          340,
+          120.0
+        ],
+        "errors_per_min": [
+          0
+        ],
+        "cpu_pct": [
+          80,
+          82,
+          35.0
+        ],
+        "mem_mb": [
+          280,
+          290,
+          160.0
+        ]
+      }
+    },
+    "worker_signature_1": {
+      "status": "Healthy",
+      "fail_count": 0,
+      "role": "signature",
+      "capacity": 2,
+      "load": 0,
+      "last_assigned_at": null,
+      "health_score": 94.0,
+      "metrics": {
+        "latency_ms": [
+          90
+        ],
+        "errors_per_min": [
+          0
+        ],
+        "cpu_pct": [
+          35
+        ],
+        "mem_mb": [
+          160
+        ]
+      }
+    }
+  }
+}

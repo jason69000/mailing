@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fintech Invoice",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "invoice_number",
+    "customer_name",
+    "customer_email",
+    "issue_date",
+    "due_date",
+    "currency",
+    "line_items",
+    "total_amount"
+  ],
+  "properties": {
+    "invoice_number": { "type": "string", "minLength": 1 },
+    "customer_name": { "type": "string", "minLength": 1 },
+    "customer_email": { "type": "string", "format": "email" },
+    "issue_date": { "type": "string", "format": "date" },
+    "due_date": { "type": "string", "format": "date" },
+    "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "line_items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["description", "quantity", "unit_price", "amount"],
+        "properties": {
+          "description": { "type": "string", "minLength": 1 },
+          "quantity": { "type": "number", "exclusiveMinimum": 0 },
+          "unit_price": { "type": "number", "minimum": 0 },
+          "amount": { "type": "number", "minimum": 0 }
+        }
+      }
+    },
+    "total_amount": { "type": "number", "minimum": 0 }
+  }
+}
