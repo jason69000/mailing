@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+output_html/
+output_pdf/
+logs/
+backup/
+*.log
+email_queue.txt
+validation_errors.log
+web/browser_validation.json
+web/health.json
+web/self_heal.json
